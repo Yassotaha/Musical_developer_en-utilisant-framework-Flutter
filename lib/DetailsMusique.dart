@@ -42,7 +42,7 @@ class _AppMusiqueState extends State<AppMusique> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 // On va ajouter des texts pour les titres
                 Text(
                   "Les Beats de la Musique",
