@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:collection/collection.dart';
+import 'package:flutter/foundation.dart';
 
 class ChannelList {
   final List<Channel> radios;
@@ -39,7 +39,6 @@ class ChannelList {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-    final listEquals = const DeepCollectionEquality().equals;
 
     return other is ChannelList && listEquals(other.radios, radios);
   }
