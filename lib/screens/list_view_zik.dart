@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import 'detail_zik.dart';
+
 class ListViewZik extends StatefulWidget {
   const ListViewZik({Key? key}) : super(key: key);
 
@@ -180,6 +182,10 @@ class _ListViewZikState extends State<ListViewZik> {
                     audioPlayer.stop();
                   } else {
                     jouerMusic(channels[idToPlay].uri);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DetailZik()));
                   }
                 },
               ),
