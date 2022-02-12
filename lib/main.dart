@@ -1,9 +1,8 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
-import 'package:alan_application_vocal_alimente/components/musical_colors.dart';
+//import 'package:alan_application_vocal_alimente/components/musical_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'screens/list_view_zik.dart';
@@ -15,6 +14,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) => MaterialApp(
