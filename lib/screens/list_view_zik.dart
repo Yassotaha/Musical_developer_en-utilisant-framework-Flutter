@@ -17,8 +17,9 @@ class ListViewZik extends StatefulWidget {
 
 class _ListViewZikState extends State<ListViewZik> {
   List<Channel> channels = [];
+  List<Channel> favoris = [];
   late Channel selectedChannel;
-  late int idToPlay;
+  late int idToPlay = 0;
   bool isPlaying = false;
 
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -44,6 +45,7 @@ class _ListViewZikState extends State<ListViewZik> {
     setState(() {
       audioPlayer.play(url);
       selectedChannel = channels.firstWhere((element) => element.uri == url);
+      // idToPlay = selectedChannel.channelId;
     });
   }
 
@@ -95,6 +97,7 @@ class _ListViewZikState extends State<ListViewZik> {
             squeeze: 0.8,
             itemExtent: 250,
             onSelectedItemChanged: (index) => {
+                  audioPlayer.stop(),
                   setState(() {
                     idToPlay = index;
                     if (kDebugMode) {
