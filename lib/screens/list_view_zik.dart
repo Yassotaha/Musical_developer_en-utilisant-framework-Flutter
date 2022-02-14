@@ -1,5 +1,6 @@
 import 'package:alan_application_vocal_alimente/components/musical_colors.dart';
 import 'package:alan_application_vocal_alimente/model/channel.dart';
+import 'package:alan_voice/alan_voice.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,7 @@ class _ListViewZikState extends State<ListViewZik> {
   void initState() {
     super.initState();
     retriveChannels();
+    setupAlan();
     audioPlayer.onPlayerStateChanged.listen((event) {
       setState(() {
         // idToPlay = event.index;
@@ -47,6 +49,13 @@ class _ListViewZikState extends State<ListViewZik> {
       selectedChannel = channels.firstWhere((element) => element.uri == url);
       // idToPlay = selectedChannel.channelId;
     });
+  }
+
+  setupAlan() {
+    AlanVoice.addButton(
+        "e95ee1af058323d2a7f740b2a4fa4e5c2e956eca572e1d8b807a3e2338fdd0dc/stage",
+        buttonAlign: AlanVoice.BUTTON_ALIGN_RIGHT);
+    //AlanVoice.callbacks.add((command) => _handleCommand(command.data));
   }
 
   @override
@@ -185,10 +194,12 @@ class _ListViewZikState extends State<ListViewZik> {
                     audioPlayer.stop();
                   } else {
                     jouerMusic(channels[idToPlay].uri);
+                    print("id to play = $idToPlay");
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const DetailZik()));
+                            builder: (context) => DetailZik(
+                                idToPlay, audioPlayer, channels, isPlaying)));
                   }
                 },
               ),
