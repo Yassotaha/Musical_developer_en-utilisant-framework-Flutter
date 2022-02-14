@@ -1,0 +1,454 @@
+{
+    "radios": [
+      {
+        "id": 1,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/7751.jpg",
+        "name": "France Info",
+        "uri": "https://icecast.radiofrance.fr/franceinfo-midfi.mp3",
+        "channelId": 7751,
+        "countryCode": "fr",
+        "genre": "News,Talk"
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/1970.jpg",
+        "name": "RTL",
+        "uri": "https://icecast.rtl.fr/rtl-1-44-128?listen=webDQcCCwwIBwMFBgUABAwDDg",
+        "channelId": 1970,
+        "countryCode": "fr",
+        "genre": "Business,News,Talk"
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/36492.jpg",
+        "name": "France Inter",
+        "uri": "https://direct.franceinter.fr/ts/franceinter-midfi.mp3",
+        "channelId": 36492,
+        "countryCode": "fr",
+        "genre": "News,Public"
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/65049.jpg",
+        "name": "RMC",
+        "uri": "https://rmc2hdslive-lh.akamaihd.net/i/DVMR_RMC@167269/master.m3u8",
+        "channelId": 65049,
+        "countryCode": "fr",
+        "genre": "News,Sports,Talk"
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/33510.jpg",
+        "name": "Europe 1",
+        "uri": "https://stream.europe1.fr/europe1.mp3?aw_0_1st.playerid=lgrdrnwsradio-en-lignefr",
+        "channelId": 33510,
+        "countryCode": "fr",
+        "genre": "News,Talk"
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/56731.jpg",
+        "name": "NOSTALGIE",
+        "uri": "https://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3?origine=mytuner",
+        "channelId": 56731,
+        "countryCode": "fr",
+        "genre": "Oldies"
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/11851.jpg",
+        "name": "NRJ",
+        "uri": "https://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=mytuner",
+        "channelId": 11851,
+        "countryCode": "fr",
+        "genre": "Pop Music,Top 40"
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/9927.jpg",
+        "name": "RFM",
+        "uri": "https://stream.rfm.fr/rfm.mp3?aw_0_1st.playerid=lgrdrnwsradio-en-lignefr",
+        "channelId": 9927,
+        "countryCode": "fr",
+        "genre": "Oldies,Pop Music"
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/59324.jpg",
+        "name": "Skyrock",
+        "uri": "https://www.skyrock.fm/stream.php/mytuner_128mp3.mp3",
+        "channelId": 59324,
+        "countryCode": "fr",
+        "genre": "Hip Hop,R&B"
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/39872.jpg",
+        "name": "France Culture",
+        "uri": "https://stream.radiofrance.fr/franceculture/franceculture.m3u8?id=radiofrance",
+        "channelId": 39872,
+        "countryCode": "fr",
+        "genre": "Culture"
+      },
+      {
+        "id": 11,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/38468.jpg",
+        "name": "RTL 2",
+        "uri": "https://live.m6radio.quortex.io/webpHJPXnXrN7B6J7Q8mcqmxP/grouprtl2/national/long/audio-96000/index.m3u8",
+        "channelId": 38468,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Classic Rock,Rock"
+      },
+      {
+        "id": 12,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/17127.jpg",
+        "name": "CHERIE FM",
+        "uri": "https://scdn.nrjaudio.fm/adwz2/fr/30201/mp3_128.mp3?origine=mytuner",
+        "channelId": 17127,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Pop Music"
+      },
+      {
+        "id": 13,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/13460.jpg",
+        "name": "Fun Radio FRANCE",
+        "uri": "https://icecast.funradio.fr/fun-1-44-128?listen=webDQcCCwwIBwMFBgUABAwDDg",
+        "channelId": 13460,
+        "countryCode": "fr",
+        "genre": "Techno,EDM - Electronic Dance Music,Electronic"
+      },
+      {
+        "id": 14,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/8394.jpg",
+        "name": "Virgin Radio",
+        "uri": "https://stream.virginradio.fr/virgin.mp3?aw_0_1st.playerid=lgrdrnwsradio-en-lignefr",
+        "channelId": 8394,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Pop Music"
+      },
+      {
+        "id": 15,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/7457.jpg",
+        "name": "Radio Classique",
+        "uri": "https://radioclassique.ice.infomaniak.ch/radioclassique-high.mp3",
+        "channelId": 7457,
+        "countryCode": "fr",
+        "genre": "Classical"
+      },
+      {
+        "id": 16,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/13400.jpg",
+        "name": "FIP",
+        "uri": "https://stream.radiofrance.fr/fip/fip_hifi.m3u8?id=radiofrance",
+        "channelId": 13400,
+        "countryCode": "fr",
+        "genre": "Alternative Rock,Eclectic"
+      },
+      {
+        "id": 17,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/9302.jpg",
+        "name": "RIRE & CHANSONS",
+        "uri": "https://scdn.nrjaudio.fm/adwz2/fr/30401/mp3_128.mp3?origine=mytuner",
+        "channelId": 9302,
+        "countryCode": "fr",
+        "genre": "Comedy"
+      },
+      {
+        "id": 18,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/28000.jpg",
+        "name": "ABC Lounge Jazz",
+        "uri": "https://listen.openstream.co/3139/audio",
+        "channelId": 28000,
+        "countryCode": "fr",
+        "genre": "Jazz,Lounge,Folk"
+      },
+      {
+        "id": 19,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/15124.jpg",
+        "name": "RFI Monde",
+        "uri": "https://rfimonde64k.ice.infomaniak.ch/rfimonde-64.mp3",
+        "channelId": 15124,
+        "countryCode": "fr",
+        "genre": "News,Ethnic,Talk"
+      },
+      {
+        "id": 20,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/29384.jpg",
+        "name": "Jazz Radio",
+        "uri": "http://broadcast.infomaniak.ch/jazzradio-high.mp3",
+        "channelId": 29384,
+        "countryCode": "fr",
+        "genre": "Jazz,Soul"
+      },
+      {
+        "id": 21,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/63855.jpg",
+        "name": "France Musique",
+        "uri": "https://direct.francemusique.fr/live/francemusique-midfi.mp3",
+        "channelId": 63855,
+        "countryCode": "fr",
+        "genre": "Jazz,Culture,Classical"
+      },
+      {
+        "id": 22,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/67392.jpg",
+        "name": "Montecarlo al doualiya (مونت كارلو الدولية)",
+        "uri": "https://montecarlodoualiya128k.ice.infomaniak.ch/mc-doualiya.mp3",
+        "channelId": 67392,
+        "countryCode": "fr",
+        "genre": "International,Arabic Music,Talk"
+      },
+      {
+        "id": 23,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/60809.jpg",
+        "name": "NRJ HITS",
+        "uri": "https://scdn.nrjaudio.fm/adwz1/fr/30043/mp3_128.mp3?origine=mytuner&aw_0_1st.station=NRJ-Hits",
+        "channelId": 60809,
+        "countryCode": "fr",
+        "genre": "Pop Music"
+      },
+      {
+        "id": 24,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/10185.jpg",
+        "name": "Chante France",
+        "uri": "https://stream.chantefrance.com/Chante_France.aac",
+        "channelId": 10185,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Pop Music"
+      },
+      {
+        "id": 25,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/19693.jpg",
+        "name": "Jazz Radio Classic Jazz",
+        "uri": "http://broadcast.infomaniak.ch/jazz-wr01-128.mp3.m3u",
+        "channelId": 19693,
+        "countryCode": "fr",
+        "genre": "Jazz"
+      },
+      {
+        "id": 26,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/27141.jpg",
+        "name": "Latina Bachata",
+        "uri": "https://latinabachata.ice.infomaniak.ch/latinabachata.mp3",
+        "channelId": 27141,
+        "countryCode": "fr",
+        "genre": ""
+      },
+      {
+        "id": 27,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/791.jpg",
+        "name": "Latina",
+        "uri": "https://start-latina.ice.infomaniak.ch/start-latina-high.aac",
+        "channelId": 791,
+        "countryCode": "fr",
+        "genre": "Pop Music,Latino"
+      },
+      {
+        "id": 28,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/4839.jpg",
+        "name": "Radio Nova",
+        "uri": "https://novazz.ice.infomaniak.ch/novazz-128.mp3",
+        "channelId": 4839,
+        "countryCode": "fr",
+        "genre": ""
+      },
+      {
+        "id": 29,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/3766.jpg",
+        "name": "TSF Jazz",
+        "uri": "https://tsfjazz.ice.infomaniak.ch/tsfjazz-high.mp3",
+        "channelId": 3766,
+        "countryCode": "fr",
+        "genre": "Jazz"
+      },
+      {
+        "id": 30,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/63702.jpg",
+        "name": "Mouv'",
+        "uri": "https://direct.mouv.fr/live/mouv-midfi.mp3",
+        "channelId": 63702,
+        "countryCode": "fr",
+        "genre": "EDM - Electronic Dance Music"
+      },
+      {
+        "id": 31,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/18172.jpg",
+        "name": "Sud Radio",
+        "uri": "https://live.sudradio.fr/sudradio-mp3-128",
+        "channelId": 18172,
+        "countryCode": "fr",
+        "genre": "News,Sports"
+      },
+      {
+        "id": 32,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/55196.jpg",
+        "name": "Jazz Radio Jazz & Cinema",
+        "uri": "https://jzr-wr20.ice.infomaniak.ch/jzr-wr20.aac",
+        "channelId": 55196,
+        "countryCode": "fr",
+        "genre": "Jazz"
+      },
+      {
+        "id": 33,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/15039.jpg",
+        "name": "RFM 80's",
+        "uri": "https://stream.rfm.fr/rfm-wr4.aac?aw_0_1st.playerid=lgrdnws&consent=CPKT1OEPKT1OEAHABBENBkCgAP_AAAAAAAAAIGNf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt-8N2f_X_L8X_2M7vF36pq4KuR4Eu3LBIQdlHOHcTUmw6okVrzPsbk2Mr7NKJ7PEmnMbe2dYGH9_n93T-ZKY7______7__-_______f__-_____59X-",
+        "channelId": 15039,
+        "countryCode": "fr",
+        "genre": "80s"
+      },
+      {
+        "id": 34,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/20987.jpg",
+        "name": "RFI Afrique",
+        "uri": "https://rfiafrique64k.ice.infomaniak.ch/rfiafrique-64.mp3",
+        "channelId": 20987,
+        "countryCode": "fr",
+        "genre": "News"
+      },
+      {
+        "id": 35,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/42317.jpg",
+        "name": "Yoga Chill",
+        "uri": "https://radio4.vip-radios.fm:18027/secure-128mp3-YogaChill",
+        "channelId": 42317,
+        "countryCode": "fr",
+        "genre": "Spirituality,Chillout,Easy Listening"
+      },
+      {
+        "id": 36,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/69938.jpg",
+        "name": "FG.",
+        "uri": "https://radiofg.impek.com/fg.mp3",
+        "channelId": 69938,
+        "countryCode": "fr",
+        "genre": "Techno,House"
+      },
+      {
+        "id": 37,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/12935.jpg",
+        "name": "NOSTALGIE CHANSONS FRANCAISES",
+        "uri": "https://scdn.nrjaudio.fm/adwz1/fr/30611/mp3_128.mp3?origine=mytuner&aw_0_1st.station=Nostalgie-Chansons-Fran-aises",
+        "channelId": 12935,
+        "countryCode": "fr",
+        "genre": "Oldies"
+      },
+      {
+        "id": 38,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/372.jpg",
+        "name": "BFM Radio 100.8",
+        "uri": "https://chai5she.cdn.dvmr.fr/bfmbusiness",
+        "channelId": 372,
+        "countryCode": "fr",
+        "genre": "Business,News"
+      },
+      {
+        "id": 39,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/67399.jpg",
+        "name": "OUI FM",
+        "uri": "https://stream.ouifm.fr/ouifm-high.mp3",
+        "channelId": 67399,
+        "countryCode": "fr",
+        "genre": "Pop Music,Eclectic,Rock"
+      },
+      {
+        "id": 40,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/7192.jpg",
+        "name": "RIRE ET CHANSONS SKETCHES",
+        "uri": "https://scdn.nrjaudio.fm/adwz1/fr/30407/mp3_128.mp3?origine=mytuner&aw_0_1st.station=Rire-Chansons-SKETCHES",
+        "channelId": 7192,
+        "countryCode": "fr",
+        "genre": "Comedy"
+      },
+      {
+        "id": 41,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/11897.jpg",
+        "name": "Jazz Radio Piano Jazz",
+        "uri": "https://jzr-piano.ice.infomaniak.ch/jzr-piano.aac",
+        "channelId": 11897,
+        "countryCode": "fr",
+        "genre": "Jazz,Classical"
+      },
+      {
+        "id": 42,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/42843.jpg",
+        "name": "Jazz Radio Blues",
+        "uri": "https://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3",
+        "channelId": 42843,
+        "countryCode": "fr",
+        "genre": "Blues,Jazz"
+      },
+      {
+        "id": 43,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/43982.jpg",
+        "name": "NOSTALGIE GENERATION 80",
+        "uri": "https://scdn.nrjaudio.fm/adwz1/fr/55524/mp3_128.mp3?origine=mytuner&aw_0_1st.station=Nostalgie-Generation-80",
+        "channelId": 43982,
+        "countryCode": "fr",
+        "genre": "80s"
+      },
+      {
+        "id": 44,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/44220.jpg",
+        "name": "M Radio",
+        "uri": "https://mfm.ice.infomaniak.ch/mfm-128.mp3",
+        "channelId": 44220,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Variety,Pop Music"
+      },
+      {
+        "id": 45,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/6320.jpg",
+        "name": "Virgin Radio Hits",
+        "uri": "https://wr.lmn.fm/vr-wr4.aac?aw_0_1st.playerid=lgrdnws",
+        "channelId": 6320,
+        "countryCode": "fr",
+        "genre": "Adult Contemporary,Pop Music"
+      },
+      {
+        "id": 46,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/53755.jpg",
+        "name": "NOSTALGIE FUNK",
+        "uri": "https://scdn.nrjaudio.fm/adwz1/fr/30607/mp3_128.mp3?origine=mytuner&aw_0_1st.station=Nostalgie-Funk",
+        "channelId": 53755,
+        "countryCode": "fr",
+        "genre": "Blues,Jazz,Soul"
+      },
+      {
+        "id": 47,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/42940.jpg",
+        "name": "Deep House Ibiza",
+        "uri": "http://deep-house-ibiza.vip-radios.fm:8015/stream-128kmp3-DeepHouseIbiza",
+        "channelId": 42940,
+        "countryCode": "fr",
+        "genre": "EDM - Electronic Dance Music,House,Dance"
+      },
+      {
+        "id": 48,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/29068.jpg",
+        "name": "Radio Orient",
+        "uri": "http://stream3.broadcast-associes.com:8405/Radio-Orient",
+        "channelId": 29068,
+        "countryCode": "fr",
+        "genre": "News,Arabic Music"
+      },
+      {
+        "id": 49,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/42020.jpg",
+        "name": "Chante France 80's",
+        "uri": "https://chantefrance80s.ice.infomaniak.ch/chantefrance80s-96.aac",
+        "channelId": 42020,
+        "countryCode": "fr",
+        "genre": "80s"
+      },
+      {
+        "id": 50,
+        "imageUrl": "https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/22217.jpg",
+        "name": "FM 80 FUNKY MUSIC Radio",
+        "uri": "https://streamingv2.shoutcast.com/fm-80",
+        "channelId": 22217,
+        "countryCode": "fr",
+        "genre": "Soul,80s,Disco"
+      }
+    ]
+  }
