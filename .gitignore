@@ -656,3 +656,4 @@ android/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.ars
 android/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat
 android/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat
 android/app/build/outputs/logs/manifest-merger-debug-report.txt
+android/app/build/intermediates/flutter/debug/flutter_build.d
