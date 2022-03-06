@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../components/musical_colors.dart';
@@ -18,6 +17,7 @@ class DetailZik extends StatefulWidget {
 
   @override
   _DetailZikState createState() =>
+      // ignore: no_logic_in_create_state
       _DetailZikState(id, audioPlayer, channels, isPlaying);
 }
 
