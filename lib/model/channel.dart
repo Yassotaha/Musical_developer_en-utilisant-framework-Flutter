@@ -52,7 +52,7 @@ class Channel {
   final int channelId;
   final String imageUrl;
   final String name;
-  final String uri;
+  final String url;
   final String countryCode;
   final String genre;
   Channel({
@@ -60,7 +60,7 @@ class Channel {
     required this.channelId,
     required this.imageUrl,
     required this.name,
-    required this.uri,
+    required this.url,
     required this.countryCode,
     required this.genre,
   });
@@ -70,7 +70,7 @@ class Channel {
     int? channelId,
     String? imageUrl,
     String? name,
-    String? uri,
+    String? url,
     String? countryCode,
     String? genre,
   }) {
@@ -79,7 +79,7 @@ class Channel {
       channelId: channelId ?? this.channelId,
       imageUrl: imageUrl ?? this.imageUrl,
       name: name ?? this.name,
-      uri: uri ?? this.uri,
+      url: url ?? this.url,
       countryCode: countryCode ?? this.countryCode,
       genre: genre ?? this.genre,
     );
@@ -91,7 +91,7 @@ class Channel {
       'channelId': channelId,
       'imageUrl': imageUrl,
       'name': name,
-      'uri': uri,
+      'url': url,
       'countryCode': countryCode,
       'genre': genre,
     };
@@ -103,7 +103,7 @@ class Channel {
       channelId: map['channelId']?.toInt() ?? 0,
       imageUrl: map['imageUrl'] ?? '',
       name: map['name'] ?? '',
-      uri: map['uri'] ?? '',
+      url: map['url'] ?? '',
       countryCode: map['countryCode'] ?? '',
       genre: map['genre'] ?? '',
     );
@@ -116,7 +116,7 @@ class Channel {
 
   @override
   String toString() {
-    return 'Channel(id: $id, channelId: $channelId, imageUrl: $imageUrl, name: $name, uri: $uri, countryCode: $countryCode, genre: $genre)';
+    return 'Channel(id: $id, channelId: $channelId, imageUrl: $imageUrl, name: $name, url: $url, countryCode: $countryCode, genre: $genre)';
   }
 
   @override
@@ -128,7 +128,7 @@ class Channel {
         other.channelId == channelId &&
         other.imageUrl == imageUrl &&
         other.name == name &&
-        other.uri == uri &&
+        other.url == url &&
         other.countryCode == countryCode &&
         other.genre == genre;
   }
@@ -139,7 +139,7 @@ class Channel {
         channelId.hashCode ^
         imageUrl.hashCode ^
         name.hashCode ^
-        uri.hashCode ^
+        url.hashCode ^
         countryCode.hashCode ^
         genre.hashCode;
   }

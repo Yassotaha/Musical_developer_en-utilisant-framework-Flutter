@@ -217,7 +217,7 @@ class _DetailZikState extends State<DetailZik> {
                                   cle = idPlay - 1;
                                 }
 
-                                audioPlayer.play(channels[cle].uri);
+                                audioPlayer.play(channels[cle].url);
                               },
                               icon: const Icon(
                                 Icons
@@ -240,7 +240,7 @@ class _DetailZikState extends State<DetailZik> {
                                 } else {
                                   //playBtn = Icons.play_arrow;
 
-                                  audioPlayer.play(channels[cle].uri);
+                                  audioPlayer.play(channels[cle].url);
 
                                   //isPlaying = true;
                                 }
@@ -253,7 +253,7 @@ class _DetailZikState extends State<DetailZik> {
                                 if (idPlay < 49) {
                                   cle = idPlay + 1;
                                 }
-                                audioPlayer.play(channels[cle].uri);
+                                audioPlayer.play(channels[cle].url);
                               },
                               icon: const Icon(
                                 Icons
