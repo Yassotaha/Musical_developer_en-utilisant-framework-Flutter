@@ -45,11 +45,11 @@ class _ListViewZikState extends State<ListViewZik> {
     });
   }
 
-  jouerMusic(String url) {
+  void jouerMusic(String url) {
     // print(selectedChannel.name);
     setState(() {
       audioPlayer.play(url);
-      selectedChannel = channels.firstWhere((element) => element.uri == url);
+      selectedChannel = channels.firstWhere((element) => element.url == url);
       // idToPlay = selectedChannel.channelId;
     });
   }
@@ -59,7 +59,17 @@ class _ListViewZikState extends State<ListViewZik> {
         "e95ee1af058323d2a7f740b2a4fa4e5c2e956eca572e1d8b807a3e2338fdd0dc/stage",
         buttonAlign: AlanVoice.BUTTON_ALIGN_RIGHT);
 
-    //AlanVoice.callbacks.add((command) => _handleCommand(command.data));
+    AlanVoice.callbacks.add((command) => _handleCommand(command.data));
+  }
+
+  _handleCommand(Map<String, dynamic> response) {
+    switch (response["command"]) {
+      case "play":
+        jouerMusic(selectedChannel.url);
+        break;
+      default:
+        print("Command was ${response["command"]}");
+    }
   }
 
   @override
@@ -288,7 +298,7 @@ class _ListViewZikState extends State<ListViewZik> {
                   if (isPlaying) {
                     audioPlayer.stop();
                   } else {
-                    jouerMusic(channels[idToPlay].uri);
+                    jouerMusic(channels[idToPlay].url);
                     // print("id to play = $idToPlay");
                     Navigator.push(
                         context,
