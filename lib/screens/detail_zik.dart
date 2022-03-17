@@ -5,71 +5,19 @@ import 'package:velocity_x/velocity_x.dart';
 import '../components/musical_colors.dart';
 import '../model/channel.dart';
 
-class DetailZik extends StatefulWidget {
-  final int id;
-  final AudioPlayer audioPlayer;
-  final List<Channel> channels;
-  final bool isPlaying;
-  //const DetailZik({Key? key, this.idPlay}) : super(key: key);
-  const DetailZik(this.id, this.audioPlayer, this.channels, this.isPlaying,
-      {Key? key})
-      : super(key: key);
-
-  @override
-  _DetailZikState createState() =>
-      // ignore: no_logic_in_create_state
-      _DetailZikState(id, audioPlayer, channels, isPlaying);
-}
-
-class _DetailZikState extends State<DetailZik> {
-  int idPlay;
-  AudioPlayer audioPlayer;
-  List<Channel> channels;
-  bool isPlaying;
-  _DetailZikState(this.idPlay, this.audioPlayer, this.channels, this.isPlaying);
+class DetailZik extends StatelessWidget {
+  int idPlay = 0;
+  final AudioPlayer audioPlayer = AudioPlayer();
+  List<Channel> channels = [];
+  bool isPlaying = false;
   int cle = 0;
   // Quelque Variables
   //bool playing = true; // aucune radio
   IconData playBtn = Icons.play_arrow;
+
+  // DetailZik(id, {Key? key}) : super(key: key);
   //List<Channel> channels = [];
   // late int idPlay;
-
-  @override
-  void initState() {
-    super.initState();
-
-    //retriveChannels();
-    audioPlayer.onPlayerStateChanged.listen((event) {
-      setState(() {
-        // idToPlay = event.index;
-        if (event == PlayerState.PLAYING) {
-          isPlaying = true;
-        } else {
-          isPlaying = false;
-        }
-      });
-    });
-  }
-
-  // retriveId(int id) {
-  //   setState(() {
-  //     idPlay = id;
-  //   });
-  // }
-
-  // get idPlay => null;
-
-  // Ici pour declarer les variable qu'on va utiliser pour notre music player
-  //AudioPlayer _player;
-  //AudioPlayer cache;
-
-  // retriveChannels() async {
-  //   // final chane = rootBundle.load("assets/channels/channel.json").toString();
-  //   final channelJson =
-  //       await rootBundle.loadString("assets/channels/channel.json");
-  //   channels = ChannelList.fromJson(channelJson).radios;
-  //   setState(() {});
-  // }
 
   @override
   Widget build(BuildContext context) {
