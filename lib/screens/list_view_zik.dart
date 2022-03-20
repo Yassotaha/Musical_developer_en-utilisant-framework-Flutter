@@ -1,3 +1,4 @@
+import 'package:alan_application_vocal_alimente/model/channel.dart';
 import 'package:alan_application_vocal_alimente/providers/radio_control_provider.dart';
 
 //import 'package:favorite_button/favorite_button.dart';
@@ -17,8 +18,10 @@ class ListViewZik extends StatelessWidget {
   Widget build(BuildContext context) {
     // RadioControlNotifier radioNotifier =
     //     Provider.of<RadioControlNotifier>(context);
-    context.read<RadioControlNotifier>().retriveChannels;
+    /// Define the app routes
 
+    context.read<RadioControlNotifier>().retriveChannels;
+    context.read<RadioControlNotifier>().setupAlan();
     final theme = Theme.of(context);
     // ignore: unused_local_variable
     final textTheme = theme.textTheme;
@@ -71,6 +74,7 @@ class ListViewZik extends StatelessWidget {
             onRefresh: () async {},
             child: Center(child: Consumer<RadioControlNotifier>(
                 builder: (context, value, child) {
+              // on utilise cette ligne pour faire les appeles des fonctions
               return value.channels.isEmpty && !value.error
                   ? const CircularProgressIndicator()
                   : value.error
@@ -85,12 +89,13 @@ class ListViewZik extends StatelessWidget {
                                 // value.getIdToPlay,
                                 value.idToPlay = index,
                                 value.audioPlayer.stop(),
+                                value.chaineChoisi = value.channels[index],
+                                value.ctxt = context,
                               },
                           childDelegate: ListWheelChildBuilderDelegate(
                             // childCount: channels.length,
                             childCount: value.channels.length,
                             builder: (context, index) {
-                              // value.setupAlan();
                               //return Text("value.channels.length");
                               return Container(
                                 decoration: BoxDecoration(
