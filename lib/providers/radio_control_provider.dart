@@ -71,11 +71,11 @@ class RadioControlNotifier extends ChangeNotifier {
         audioPlayer.stop();
         break;
       case "next": // On veut jour le prochain channel
-        jouerNext(chaineChoisi.id);
+        playNext(chaineChoisi.id);
 
         break;
       case "prev": // On veut jour le channel precedente
-        jouerPrev(chaineChoisi.id);
+        playPrev(chaineChoisi.id);
         //navigation(ctxt);
         break;
       default:
@@ -125,6 +125,38 @@ class RadioControlNotifier extends ChangeNotifier {
     jouerMusic(channels[id].url);
     //navigation(ctxt);
     notifyListeners();
+  }
+
+  late Channel newChannel;
+  void playNext(ch) {
+    if (ch + 1 > channels.length) {
+      newChannel = channels.firstWhere((element) => element.id == 1);
+      channels.remove(newChannel);
+      channels.insert(0, newChannel);
+      ch++;
+    } else {
+      newChannel = channels.firstWhere((element) => element.id == ch + 1);
+      channels.remove(newChannel);
+      channels.insert(0, newChannel);
+    }
+
+    notifyListeners();
+    jouerMusic(newChannel.url);
+  }
+
+  void playPrev(ch) {
+    if (ch - 1 <= 0) {
+      newChannel = channels.firstWhere((element) => element.id == 1);
+      channels.remove(newChannel);
+      channels.insert(0, newChannel);
+    } else {
+      newChannel = channels.firstWhere((element) => element.id == ch - 1);
+      channels.remove(newChannel);
+      channels.insert(0, newChannel);
+    }
+    ch--;
+    notifyListeners();
+    jouerMusic(newChannel.url);
   }
 
   void jouerPrev(id) {
