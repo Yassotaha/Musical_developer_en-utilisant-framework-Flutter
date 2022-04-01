@@ -1,4 +1,3 @@
-import 'package:alan_application_vocal_alimente/model/channel.dart';
 import 'package:alan_application_vocal_alimente/providers/radio_control_provider.dart';
 
 //import 'package:favorite_button/favorite_button.dart';
@@ -10,6 +9,7 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:alan_application_vocal_alimente/components/musical_colors.dart';
 
 import 'detail_zik.dart';
+import 'nav_drawer.dart';
 
 class ListViewZik extends StatelessWidget {
   const ListViewZik({Key? key}) : super(key: key);
@@ -22,11 +22,11 @@ class ListViewZik extends StatelessWidget {
 
     context.read<RadioControlNotifier>().retriveChannels;
     context.read<RadioControlNotifier>().setupAlan();
-    final theme = Theme.of(context);
+    //final theme = Theme.of(context);
     // ignore: unused_local_variable
-    final textTheme = theme.textTheme;
+    //final textTheme = theme.textTheme;
     return Scaffold(
-      drawer: const AppDrawer(),
+      drawer: const NavDrawer(),
       appBar: AppBar(
         backgroundColor: MusicalColors.blueBell,
         title: "Musical"
@@ -79,7 +79,7 @@ class ListViewZik extends StatelessWidget {
                   ? const CircularProgressIndicator()
                   : value.error
                       ? Text(
-                          "Oops, something went wrong. $value.errorMessage",
+                          "Oops, il y a un probleme. $value.errorMessage",
                           textAlign: TextAlign.center,
                         )
                       : ListWheelScrollView.useDelegate(
@@ -183,7 +183,7 @@ class ListViewZik extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => DetailZik()));
+                                builder: (context) => const DetailZik()));
                       }
                     },
                   ),
