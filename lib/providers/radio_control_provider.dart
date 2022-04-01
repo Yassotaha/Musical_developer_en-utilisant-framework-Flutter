@@ -13,9 +13,10 @@ class RadioControlNotifier extends ChangeNotifier {
   late int _idToPlay = 0;
   bool _isPlaying = false;
 
-  late List<Channel> _favoris = [];
+  late final List<Channel> _favoris = [];
 
   List<Channel> get favoris => _favoris;
+  // ignore: prefer_typing_uninitialized_variables
   var _ctxt;
 
   get ctxt => _ctxt;
@@ -79,7 +80,9 @@ class RadioControlNotifier extends ChangeNotifier {
         //navigation(ctxt);
         break;
       default:
-        print("Command was ${response["command"]}");
+        if (kDebugMode) {
+          print("Command was ${response["command"]}");
+        }
         break;
     }
   }
@@ -116,13 +119,16 @@ class RadioControlNotifier extends ChangeNotifier {
   }
 
   void jouerNext(id) {
+    audioPlayer.stop();
     if (id + 1 > channels.length) {
       jouerMusic(channels[1].url);
-      notifyListeners();
-    } else {}
-    id++;
-    idToPlay = id;
-    jouerMusic(channels[id].url);
+      //notifyListeners();
+    } else {
+      id++;
+      idToPlay = id;
+      jouerMusic(channels[id].url);
+    }
+
     //navigation(ctxt);
     notifyListeners();
   }
@@ -160,13 +166,16 @@ class RadioControlNotifier extends ChangeNotifier {
   }
 
   void jouerPrev(id) {
+    audioPlayer.stop();
     if (id < 1) {
       jouerMusic(channels[1].url);
-      notifyListeners();
-    } else {}
-    id--;
-    idToPlay = id;
-    jouerMusic(channels[id].url);
+      //notifyListeners();
+    } else {
+      id--;
+      idToPlay = id;
+      jouerMusic(channels[id].url);
+    }
+
     notifyListeners();
   }
 

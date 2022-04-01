@@ -42,3 +42,31 @@ app.*.map.json
 
 # Android Studio will place build artifacts here
 .android
+android/app/build/intermediates/flutter/debug/flutter_assets/AssetManifest.json
+android/app/build/intermediates/flutter/debug/flutter_assets/kernel_blob.bin
+android/app/build/intermediates/flutter/debug/flutter_assets/NOTICES.Z
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/image.jpg
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/images/images-1.png
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/images/micro.jpg
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/images/music.png
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/images/webp.webp
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/NOTICES.Z
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/image.jpg
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/images/images-1.png
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/images/micro.jpg
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/images/music.png
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/images/webp.webp
+android/app/build/outputs/apk/debug/app-debug.apk
+android/app/build/intermediates/flutter/debug/flutter_build.d
+android/app/build/intermediates/flutter/debug/flutter_assets/AssetManifest.json
+android/app/build/intermediates/flutter/debug/flutter_assets/kernel_blob.bin
+android/app/build/intermediates/flutter/debug/flutter_assets/NOTICES.Z
+android/app/build/intermediates/flutter/debug/flutter_assets/assets/image.jpg
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/NOTICES.Z
+android/app/build/intermediates/merged_assets/debug/out/flutter_assets/assets/image.jpg
+android/app/build/outputs/apk/debug/app-debug.apk
+android/app/build/intermediates/flutter/debug/flutter_build.d

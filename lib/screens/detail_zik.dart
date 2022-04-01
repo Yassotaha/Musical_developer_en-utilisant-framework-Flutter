@@ -1,13 +1,13 @@
 import 'package:alan_application_vocal_alimente/providers/radio_control_provider.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../components/musical_colors.dart';
-import '../model/channel.dart';
 
 class DetailZik extends StatelessWidget {
+  const DetailZik({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Consumer<RadioControlNotifier>(builder: (context, value, child) {
