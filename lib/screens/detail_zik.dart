@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../components/musical_colors.dart';
+import 'nav_drawer.dart';
 
 class DetailZik extends StatelessWidget {
   const DetailZik({Key? key}) : super(key: key);
@@ -12,22 +13,13 @@ class DetailZik extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<RadioControlNotifier>(builder: (context, value, child) {
       return Scaffold(
+          drawer: const NavDrawer(),
           appBar: AppBar(
             backgroundColor: MusicalColors.blueBell,
             title: "Musical".text.xl4.bold.white.make().shimmer(
                 primaryColor: Colors.yellow, secondaryColor: Colors.pink),
             //backgroundColor: Colors.transparent,
             centerTitle: true,
-            // elevation: 0.0,
-            actions: <Widget>[
-              // ignore: prefer_const_constructors
-              IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.refresh,
-                    size: 30.0,
-                  ))
-            ],
             toolbarHeight: 60,
           ),
 
@@ -129,6 +121,7 @@ class DetailZik extends StatelessWidget {
 
                     Expanded(
                         child: Container(
+                      height: 60.0,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(

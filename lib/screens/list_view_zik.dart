@@ -16,15 +16,9 @@ class ListViewZik extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // RadioControlNotifier radioNotifier =
-    //     Provider.of<RadioControlNotifier>(context);
-    /// Define the app routes
-
     context.read<RadioControlNotifier>().retriveChannels;
     context.read<RadioControlNotifier>().setupAlan();
-    //final theme = Theme.of(context);
-    // ignore: unused_local_variable
-    //final textTheme = theme.textTheme;
+
     return Scaffold(
       drawer: const NavDrawer(),
       appBar: AppBar(
@@ -38,19 +32,6 @@ class ListViewZik extends StatelessWidget {
             .shimmer(primaryColor: Colors.yellow, secondaryColor: Colors.pink),
         //backgroundColor: Colors.transparent,
         centerTitle: true,
-        // elevation: 0.0,
-        actions: <Widget>[
-          // ignore: prefer_const_constructors
-          IconButton(
-              padding: const EdgeInsets.only(
-                right: 20.0,
-              ),
-              onPressed: () {},
-              icon: const Icon(
-                Icons.refresh,
-                size: 35.0,
-              )),
-        ],
         toolbarHeight: 60,
       ),
       body: Stack(children: [
@@ -228,90 +209,90 @@ class ListViewZik extends StatelessWidget {
   }
 }
 
-class AppDrawer extends StatelessWidget {
-  const AppDrawer({Key? key}) : super(key: key);
+// class AppDrawer extends StatelessWidget {
+//   const AppDrawer({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[
-          createHeader(),
-          createDrawerItem(),
-        ],
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Drawer(
+//       child: ListView(
+//         padding: EdgeInsets.zero,
+//         children: <Widget>[
+//           createHeader(),
+//           createDrawerItem(),
+//         ],
+//       ),
+//     );
+//   }
+// }
 
-Widget createHeader() {
-  return DrawerHeader(
-      margin: EdgeInsets.zero,
-      padding: EdgeInsets.zero,
-      decoration: const BoxDecoration(
-          image: DecorationImage(
-              fit: BoxFit.fill, image: AssetImage('assets/images/micro.jpg'))),
-      child: Stack(children: const <Widget>[
-        Positioned(
-            bottom: 12.0,
-            left: 16.0,
-            child: Text("Favoris",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.w500))),
-      ]));
-}
+// Widget createHeader() {
+//   return DrawerHeader(
+//       margin: EdgeInsets.zero,
+//       padding: EdgeInsets.zero,
+//       decoration: const BoxDecoration(
+//           image: DecorationImage(
+//               fit: BoxFit.fill, image: AssetImage('assets/images/micro.jpg'))),
+//       child: Stack(children: const <Widget>[
+//         Positioned(
+//             bottom: 12.0,
+//             left: 16.0,
+//             child: Text("Favoris",
+//                 style: TextStyle(
+//                     color: Colors.white,
+//                     fontSize: 30,
+//                     fontWeight: FontWeight.w500))),
+//       ]));
+// }
 
-Widget createDrawerItem() {
-  return Consumer<RadioControlNotifier>(builder: (context, value, child) {
-    return ListView.builder(
-        shrinkWrap: true,
-        padding: const EdgeInsets.all(8.0),
-        itemCount: value.favoris.isEmpty ? 0 : value.favoris.length,
-        itemBuilder: (BuildContext context, int index) {
-          return GestureDetector(
-              //You need to make my child interactive
-              onTap: () => value.jouerMusic(value.favoris[index].url),
-              child: Card(
-                elevation: 0,
-                color: Colors.purple.shade100,
-                // height: 80,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ListTile(
-                    leading: Image.network(
-                      value.favoris[index].imageUrl,
-                      height: 50,
-                      width: 50,
-                    ),
-                    title: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Center(
-                          child: Text(value.favoris[index].name,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12))),
-                    ),
-                    subtitle: Center(
-                        child: Text(value.favoris[index].genre,
-                            style: TextStyle(
-                                color: Colors.indigo.shade500,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 10))),
-                    // trailing: IconButton(
-                    //     onPressed: () {},
-                    //     icon: const Icon(
-                    //       value.isPlaying()?
+// Widget createDrawerItem() {
+//   return Consumer<RadioControlNotifier>(builder: (context, value, child) {
+//     return ListView.builder(
+//         shrinkWrap: true,
+//         padding: const EdgeInsets.all(8.0),
+//         itemCount: value.favoris.isEmpty ? 0 : value.favoris.length,
+//         itemBuilder: (BuildContext context, int index) {
+//           return GestureDetector(
+//               //You need to make my child interactive
+//               onTap: () => value.jouerMusic(value.favoris[index].url),
+//               child: Card(
+//                 elevation: 0,
+//                 color: Colors.purple.shade100,
+//                 // height: 80,
+//                 child: Padding(
+//                   padding: const EdgeInsets.all(8.0),
+//                   child: ListTile(
+//                     leading: Image.network(
+//                       value.favoris[index].imageUrl,
+//                       height: 50,
+//                       width: 50,
+//                     ),
+//                     title: Padding(
+//                       padding: const EdgeInsets.all(8.0),
+//                       child: Center(
+//                           child: Text(value.favoris[index].name,
+//                               style: const TextStyle(
+//                                   color: Colors.black,
+//                                   fontWeight: FontWeight.bold,
+//                                   fontSize: 12))),
+//                     ),
+//                     subtitle: Center(
+//                         child: Text(value.favoris[index].genre,
+//                             style: TextStyle(
+//                                 color: Colors.indigo.shade500,
+//                                 fontWeight: FontWeight.bold,
+//                                 fontSize: 10))),
+//                     // trailing: IconButton(
+//                     //     onPressed: () {},
+//                     //     icon: const Icon(
+//                     //       value.isPlaying()?
 
-                    //       Icons.arrow_forward_sharp,
-                    //       size: 30,
-                    //     ))
-                  ),
-                ),
-              ));
-        });
-  });
-}
+//                     //       Icons.arrow_forward_sharp,
+//                     //       size: 30,
+//                     //     ))
+//                   ),
+//                 ),
+//               ));
+//         });
+//   });
+// }
