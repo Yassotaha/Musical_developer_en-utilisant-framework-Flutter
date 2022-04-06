@@ -3,7 +3,6 @@ import 'package:alan_application_vocal_alimente/screens/favoris_zik.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
-import 'contact_zik.dart';
 import 'help_zik.dart';
 import 'list_view_zik.dart';
 
@@ -50,9 +49,6 @@ class NavDrawer extends StatelessWidget {
                   builder: (BuildContext context) => const ListViewZik()));
             },
           ),
-          // const Divider(
-          //   color: Colors.grey,
-          // ),
           ListTile(
             title: const Text("Favoris"),
             tileColor: MusicalColors.languidLavender,
@@ -70,31 +66,6 @@ class NavDrawer extends StatelessWidget {
                   builder: (BuildContext context) => const FavorisZik()));
             },
           ),
-          // const Divider(
-          //   color: Colors.grey,
-          // ),
-
-          ListTile(
-            title: const Text("Contact"),
-            tileColor: MusicalColors.blueBell,
-            leading: IconButton(
-              icon: const Icon(Icons.contact_page_rounded),
-              onPressed: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const ContactZik()));
-              },
-            ),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => const ContactZik()));
-            },
-          ),
-          // const Divider(
-          //   color: Colors.grey,
-          // ),
-
           ListTile(
             title: const Text("Aide"),
             tileColor: MusicalColors.languidLavender,
@@ -112,10 +83,6 @@ class NavDrawer extends StatelessWidget {
                   builder: (BuildContext context) => const HelpZik()));
             },
           ),
-          // const Padding(
-          //   //color: Colors.grey,
-          // ),
-
           ListTile(
             title: const Text("Apparence"),
             tileColor: MusicalColors.lavenderBlush,
